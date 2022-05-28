@@ -1,0 +1,25 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="display-3 text-center">Fahrenheit / Celsius Converter</h1>
+        </div>
+        <img class="mx-auto my-3" src="../../assets/img/thermometer-temperature-svgrepo-com.svg" width="400" height="400" alt="temp">            
+        <hr>
+        
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="col">
+                <h2>Temprature <span class="bg-info rounded-1 px-1">Fahrenheit</span> to <span class="bg-danger text-white rounded-1 px-1">Celsuis</span></h2>
+                <input class="my-2 p-1" type="text" [(ngModel)]="Fahrenheit">
+                <p class="bg-dark p-3 text-warning my-2 font-monospace">Fahrenheit ={{Fahrenheit | temprature:'C'}}&deg;</p>    
+            </div>
+            <div class="col">
+                <h2>Temprature <span class="bg-danger text-white rounded-1 px-1">Celsuis</span> to <span class="bg-info rounded-1 px-1">Fahrenheit</span></h2>
+                <input class="mx-y p-1" type="text" [(ngModel)]="Celsius">
+                <p class="bg-dark p-3 text-warning my-2 font-monospace">Celsius ={{Celsius | temprature:'F'}}&deg;</p>      
+            </div>            
+        </div>
+    </div>
+    <footer class="text-center" style="font-size: 12px;">&copy; omar201014</footer>
+</div>
